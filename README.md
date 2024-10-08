@@ -10,15 +10,15 @@
 tampermonkey.net油猴脚本
 
 
-// ==UserScript==
-// @name         Toggle Zhihu Right Sidebar
-// @namespace    http://tampermonkey.net/
-// @version      1.2
-// @description  隐藏/显示知乎的右边栏，并调整左边主栏宽度
-// @author       You
-// @match        *://www.zhihu.com/
-// @grant        none
-// ==/UserScript==
+    // ==UserScript==
+    // @name         Toggle Zhihu Right Sidebar
+    // @namespace    http://tampermonkey.net/
+    // @version      1.2
+    // @description  隐藏/显示知乎的右边栏，并调整左边主栏宽度
+    // @author       You
+    // @match        *://www.zhihu.com/
+    // @grant        none
+    // ==/UserScript==
 
 (function() {
     'use strict';
@@ -70,15 +70,15 @@ document.body.appendChild(toggleButton);
 
 
 
-// ==UserScript==
-// @name         Toggle Zhihu Right Sidebar
-// @namespace    http://tampermonkey.net/
-// @version      1.2
-// @description  隐藏/显示知乎的右边栏，并调整左边主栏宽度
-// @author       You
-// @match        *://www.zhihu.com/question/*
-// @grant        none
-// ==/UserScript==
+    // ==UserScript==
+    // @name         Toggle Zhihu Right Sidebar
+    // @namespace    http://tampermonkey.net/
+    // @version      1.2
+    // @description  隐藏/显示知乎的右边栏，并调整左边主栏宽度
+    // @author       You
+    // @match        *://www.zhihu.com/question/*
+    // @grant        none
+    // ==/UserScript==
 
 (function() {
     'use strict';
