@@ -9,6 +9,7 @@
 复制下面两段到
 tampermonkey.net油猴脚本
 
+'''
 // ==UserScript==
 // @name         Toggle Zhihu Right Sidebar
 // @namespace    http://tampermonkey.net/
@@ -24,15 +25,14 @@ tampermonkey.net油猴脚本
 
     // 创建按钮并设置样式
     const toggleButton = document.createElement('div');
-    toggleButton.innerHTML = '<div style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: flex-end; background: linear-gradient(140.91deg, rgba(255, 135, 183, 0.5) 12.61%, rgba(236, 76, 140, 0.5) 76.89%); border-top-left-radius: 36px; border-bottom-left-radius: 36px; cursor: pointer; color: white; font-size: 12px; font-weight: bold;">右:开</div>';
-    toggleButton.style.position = 'fixed';
-    toggleButton.style.top = '50%'; // 根据需要调整位置
-    toggleButton.style.right = '0';
-    toggleButton.style.zIndex = '9999';
-    toggleButton.style.margin = '0';
-    toggleButton.style.padding = '0';
-    document.body.appendChild(toggleButton);
-
+toggleButton.innerHTML = '<div style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: flex-end; background: linear-gradient(140.91deg, rgba(255, 135, 183, 0.5) 12.61%, rgba(236, 76, 140, 0.5) 76.89%); border-top-left-radius: 36px; border-bottom-left-radius: 36px; cursor: pointer; color: white; font-size: 12px; font-weight: bold;">右:开</div>';
+toggleButton.style.position = 'fixed';
+toggleButton.style.top = '50%'; // 根据需要调整位置
+toggleButton.style.right = '0';
+toggleButton.style.zIndex = '9999';
+toggleButton.style.margin = '0';
+toggleButton.style.padding = '0';
+document.body.appendChild(toggleButton);
     // 定义一个变量来跟踪右边栏的状态
     let isSidebarHidden = true; // 默认右边栏为隐藏状态
 
@@ -66,3 +66,4 @@ tampermonkey.net油猴脚本
     // 点击按钮时切换右边栏的显示状态
     toggleButton.addEventListener('click', toggleRightSidebar);
 })();
+'''
